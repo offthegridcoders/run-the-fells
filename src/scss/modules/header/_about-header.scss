@@ -1,11 +1,11 @@
 .about-header {
   background-color: $beige;
-  padding-top: 120px;
+  padding-top: 200px;
   position: relative;
 
   &:before {
     left: 130px;
-    top: 50px;
+    top: 110px;
   }
 
   &:after {
@@ -24,9 +24,21 @@
     transform: rotate(7deg);
     right: 90px;
     top: 50%;
-    margin-top: -200px;
+    margin-top: -170px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: url(#greyscale);
+    filter: gray;
   }
 
+  &:hover {
+    &:after {  
+      -webkit-filter: grayscale(0%);
+      filter: grayscale(0%);
+      filter: none;
+      transition: .6s;
+    }
+  }
   h1,
   h2 {
     color: $dark-brown;

@@ -29,7 +29,10 @@ a {
   visibility: hidden; }
 
 .main-nav {
-  background-color: #a17933; }
+  background-color: #a17933;
+  position: fixed;
+  z-index: 9999;
+  width: 100%; }
   .main-nav .company {
     color: rgba(255, 255, 255, 0.72);
     display: inline-block;
@@ -63,6 +66,7 @@ a {
     text-transform: capitalize;
     vertical-align: middle; }
     .main-nav li:hover {
+      transition: .3s;
       background-color: #74531a;
       color: #fff; }
     @media screen and (max-width: 500px) {
@@ -80,9 +84,9 @@ footer {
   text-align: center; }
 
 header {
-  min-height: 500px;
+  min-height: 600px;
   width: 100%;
-  padding: 50px; }
+  padding: 100px 50px 50px; }
   header h1 {
     font-weight: 200;
     font-size: 60px; }
@@ -103,11 +107,11 @@ header {
 
 .about-header {
   background-color: #dfd29a;
-  padding-top: 120px;
+  padding-top: 200px;
   position: relative; }
   .about-header:before {
     left: 130px;
-    top: 50px; }
+    top: 110px; }
   .about-header:after {
     content: "";
     background-image: url('../assets/stephen-guio.jpg');
@@ -126,7 +130,16 @@ header {
     transform: rotate(7deg);
     right: 90px;
     top: 50%;
-    margin-top: -200px; }
+    margin-top: -170px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: url(#greyscale);
+    filter: gray; }
+  .about-header:hover:after {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    filter: none;
+    transition: .6s; }
   .about-header h1, .about-header h2 {
     color: #74531a; }
   .about-header h1 {

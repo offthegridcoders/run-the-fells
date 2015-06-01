@@ -1,5 +1,8 @@
 .main-nav {
   background-color: $brown;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
 
   .company {
     color: rgba(255, 255, 255, 0.72);
@@ -41,6 +44,7 @@
     vertical-align: middle;
 
     &:hover {
+      transition: .3s;
       background-color: $dark-brown;
       color: #fff;
     }
