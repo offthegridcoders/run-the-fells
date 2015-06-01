@@ -1,0 +1,28 @@
+header {
+  min-height: 500px;
+  width: 100%;
+  padding: 50px;
+
+  h1 {
+    font-weight: 200;
+    font-size: 60px;
+  }
+
+  h2 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+  }
+
+  &:before {
+    content: "";
+    display: block;
+    background-image: url('../assets/curve-line.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 530px;
+    height: 150px;
+    position: absolute;
+    z-index: +100;
+  }
+}

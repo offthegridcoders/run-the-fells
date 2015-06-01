@@ -1,0 +1,42 @@
+.about-header {
+  background-color: $beige;
+  padding-top: 120px;
+  position: relative;
+
+  &:before {
+    left: 130px;
+    top: 50px;
+  }
+
+  &:after {
+    content: "";
+    background-image: url('../assets/stephen-guio.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.32);
+    border: solid 5px #fff;
+    -ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+    transform: rotate(7deg);
+    right: 90px;
+    top: 50%;
+    margin-top: -200px;
+  }
+
+  h1,
+  h2 {
+    color: $dark-brown;
+  }
+
+  h1 {
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    width: 40%;
+  }
+}

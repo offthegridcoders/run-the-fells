@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box; }
+
+html, body {
+  background-attachment: fixed;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  max-width: 100%;
+  padding: 0;
+  width: 100%; }
+
+ul, li, p, h1, h2, h3, h4, h5, h6, form, header, footer, nav, section, article {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style: none; }
+
+a {
+  color: #448f18;
+  text-decoration: none; }
+
+.clearfix:after {
+  clear: both;
+  content: ' ';
+  display: block;
+  font-size: 0;
+  height: 0;
+  visibility: hidden; }
+
+.main-nav {
+  background-color: #a17933; }
+  .main-nav .company {
+    color: rgba(255, 255, 255, 0.72);
+    display: inline-block;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    margin-left: 20px;
+    padding: 14px 0;
+    vertical-align: middle; }
+    @media screen and (max-width: 800px) {
+      .main-nav .company {
+        background-color: #322309;
+        display: block;
+        margin: 0;
+        text-align: center;
+        width: 100%; } }
+  .main-nav ul {
+    float: right;
+    margin-right: 50px; }
+    @media screen and (max-width: 800px) {
+      .main-nav ul {
+        float: none;
+        margin-right: 0;
+        text-align: center;
+        width: 100%; } }
+  .main-nav li {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 15px 30px;
+    text-transform: capitalize;
+    vertical-align: middle; }
+    .main-nav li:hover {
+      background-color: #74531a;
+      color: #fff; }
+    @media screen and (max-width: 500px) {
+      .main-nav li {
+        font-size: 16px;
+        padding: 15px 20px; } }
+  .main-nav a {
+    color: rgba(255, 255, 255, 0.72); }
+
+footer {
+  background-color: #a17933;
+  color: #fff;
+  min-height: 300px;
+  padding: 50px;
+  text-align: center; }
+
+header {
+  min-height: 500px;
+  width: 100%;
+  padding: 50px; }
+  header h1 {
+    font-weight: 200;
+    font-size: 60px; }
+  header h2 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px; }
+  header:before {
+    content: "";
+    display: block;
+    background-image: url('../assets/curve-line.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 530px;
+    height: 150px;
+    position: absolute;
+    z-index: +100; }
+
+.about-header {
+  background-color: #dfd29a;
+  padding-top: 120px;
+  position: relative; }
+  .about-header:before {
+    left: 130px;
+    top: 50px; }
+  .about-header:after {
+    content: "";
+    background-image: url('../assets/stephen-guio.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.32);
+    border: solid 5px #fff;
+    -ms-transform: rotate(7deg);
+    /* IE 9 */
+    -webkit-transform: rotate(7deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(7deg);
+    right: 90px;
+    top: 50%;
+    margin-top: -200px; }
+  .about-header h1, .about-header h2 {
+    color: #74531a; }
+  .about-header h1 {
+    margin-bottom: 30px; }
+  .about-header h2 {
+    width: 40%; }
