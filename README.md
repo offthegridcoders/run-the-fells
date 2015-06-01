@@ -1,8 +1,8 @@
-# acidotic Racing Official Website
+# Run the Fells
 
 ## Part of Off The Grid Coders
 
-You can see the progress here: [LINK](http://offthegridcoders.github.io/acidotic-racing/dist/)
+You can see the progress here: [LINK](http://offthegridcoders.github.io/run-the-fells/dist/)
 
 Generated Static HTML using Gulp
 
@@ -20,20 +20,12 @@ Generated Static HTML using Gulp
   - /css (built for compression - need to use gulp to auto delete this after)
   - /js
   - /scss
-  - /contact
-  - /event
-    - (single events)
-  - /events
-    - (seasons)
   - /partials
     - (head,header,footer,etc...)
-  - /photos
-  - /results
-  - /why-acidotic
 + /dist (minified and built with gulp)
 
 #### About
 
->Our mission is to host uncompromisingly excellent events in beautiful locations on challenging courses and to make every competitor feel as though they are important and valuable to us.
+>Run The Fells is a passion project between Guillaume Delloue and Stephen Young. You can find us on Twitter @willthefrench and @thewickedwebdev, respectively.
 
 
