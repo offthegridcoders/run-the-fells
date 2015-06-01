@@ -57,7 +57,8 @@ a {
         float: none;
         margin-right: 0;
         text-align: center;
-        width: 100%; } }
+        width: 100%;
+        transition: .6s; } }
   .main-nav li {
     display: inline-block;
     font-size: 18px;
@@ -109,9 +110,21 @@ header {
   background-color: #dfd29a;
   padding-top: 200px;
   position: relative; }
+  @media screen and (max-width: 900px) {
+    .about-header {
+      min-height: 500px;
+      padding-top: 120px;
+      transition: .6s; } }
+  @media screen and (max-width: 700px) {
+    .about-header {
+      padding-top: 180px;
+      transition: .6s; } }
   .about-header:before {
     left: 130px;
     top: 110px; }
+    @media screen and (max-width: 1100px) {
+      .about-header:before {
+        display: none; } }
   .about-header:after {
     content: "";
     background-image: url('../assets/stephen-guio.jpg');
@@ -131,18 +144,26 @@ header {
     right: 90px;
     top: 50%;
     margin-top: -170px;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    filter: url(#greyscale);
-    filter: gray; }
-  .about-header:hover:after {
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
-    filter: none;
     transition: .6s; }
+    @media screen and (max-width: 900px) {
+      .about-header:after {
+        width: 300px;
+        height: 300px;
+        margin-top: -130px;
+        transition: .6s; } }
+    @media screen and (max-width: 800px) {
+      .about-header:after {
+        margin-top: -100px; } }
+    @media screen and (max-width: 700px) {
+      .about-header:after {
+        display: none; } }
   .about-header h1, .about-header h2 {
     color: #74531a; }
   .about-header h1 {
     margin-bottom: 30px; }
   .about-header h2 {
     width: 40%; }
+    @media screen and (max-width: 700px) {
+      .about-header h2 {
+        width: 100%;
+        transition: .6s; } }
