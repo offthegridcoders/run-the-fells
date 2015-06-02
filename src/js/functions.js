@@ -1,3 +1,4 @@
+// Form Label Animations
 $('input').on('input propertychange paste', function() {
   if ($(this).val()) {
     $(this).prev().addClass('show-label');

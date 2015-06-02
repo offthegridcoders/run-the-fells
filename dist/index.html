@@ -23,7 +23,7 @@
 
   <body>
     <!-- NAVIGATION BAR -->
-      <nav class="main-nav clearfix animated fadeInDownBig">
+      <nav class="main-nav clearfix">
   <h1 class="company"><i class="fa fa-pagelines"></i>run the fells</h1>
   <ul>
     <li><a href="#">trails</a></li>
@@ -39,14 +39,14 @@
       </header>
       <section>
         <article class="green-copy-article">
-          <p>We’re outdoor fanatics who love to use the web and technology to bring human beings closer to nature. </p>
-          <p>We hope you find the information on this website useful and that it motivates you to enjoy everything the Fells have to offer. All we ask is that you stay safe, be respectful and have as much fun as possible.</p>
-          <p>Please use the contact form below to reach us. We make it a point to respond to all legitimate inquiries.</p>
-          <p>Carpe diem,</p>
-          <img src="assets/signatures.png">
+          <p class="wow pulse">We’re outdoor fanatics who love to use the web and technology to bring human beings closer to nature. </p>
+          <p class="wow pulse">We hope you find the information on this website useful and that it motivates you to enjoy everything the Fells have to offer. All we ask is that you stay safe, be respectful and have as much fun as possible.</p>
+          <p class="wow pulse">Please use the contact form below to reach us. We make it a point to respond to all legitimate inquiries.</p>
+          <p class="wow pulse">Carpe diem,</p>
+          <img class="wow pulse" src="assets/signatures.png">
         </article>
         <article class="contact-form-article clearfix">
-          <h1><i class="fa fa-envelope"></i> contact us</h1>
+          <h1 class="wow pulse"><i class="fa fa-envelope"></i> contact us</h1>
           <form>
             <div class="twitter-wrapper">
               <p>Guillaume Delloue <i class="fa fa-twitter"></i></p>
@@ -72,5 +72,23 @@
 </footer>
     <!-- SCRIPT FILES -->
       <script src="js/scripts.js"></script>
+    <script>
+      // WOW
+      var wow = new WOW(
+        {
+          boxClass:     'wow',      // animated element css class (default is wow)
+          animateClass: 'animated', // animation css class (default is animated)
+          offset:       0,          // distance to the element when triggering the animation (default is 0)
+          mobile:       true,       // trigger animations on mobile devices (default is true)
+          live:         true,       // act on asynchronously loaded content (default is true)
+          callback:     function(box) {
+            // the callback is fired every time an animation is started
+            // the argument that is passed in is the DOM node being animated
+          }
+        }
+      );
+
+      wow.init();
+    </script>
   </body>
 </html>
