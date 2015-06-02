@@ -24,29 +24,27 @@
   }
 
   &:after {
-    content: "";
     background-image: url('../assets/stephen-guio.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    display: block;
-    position: absolute;
-    height: 400px;
-    width: 400px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.32);
     border: solid 5px #fff;
-    -ms-transform: rotate(7deg); /* IE 9 */
-    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
-    transform: rotate(7deg);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .32);
+    content: '';
+    display: block;
+    height: 400px;
+    margin-top: -170px;
+    position: absolute;
     right: 90px;
     top: 50%;
-    margin-top: -170px;
+    transform: rotate(7deg);
     transition: .6s;
+    width: 400px;
 
     @media screen and (max-width: 900px) {
-      width: 300px;
       height: 300px;
       margin-top: -130px;
       transition: .6s;
+      width: 300px;
     }
 
     @media screen and (max-width: 800px) {
@@ -71,8 +69,8 @@
     width: 40%;
 
     @media screen and (max-width: 700px) {
-      width: 100%;
       transition: .6s;
+      width: 100%;
     }
   }
 }

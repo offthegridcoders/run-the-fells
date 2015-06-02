@@ -1,0 +1,105 @@
+.contact-form-article {
+  padding: 50px;
+  position: relative;  
+
+  @media screen and (max-width: 675px) {
+    padding: 50px 20px;
+  }
+
+  h1 {
+    border-bottom: solid 1px #e2e2e2;
+    color: #252525;
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    
+    i {
+      width: 35px;
+    }
+  }
+
+
+  form {
+    margin-top: 30px;
+    position: relative;
+  }
+
+  .input-wrapper {
+    width: 65%;
+
+    @media screen and (max-width: 675px) {
+      width: 100%;
+    }
+  }
+
+  input {
+    margin-bottom: 15px;
+    outline: none;
+    padding-left: 10px;
+  }
+
+  textarea {
+    height: 200px;
+    outline: none;
+    padding-left: 10px;
+    resize: none;
+  }
+
+  button {
+    position: absolute;
+    right: 0;
+    bottom: 0;  
+
+    @media screen and (max-width: 675px) {
+      position: static;
+      margin-top: 20px;
+    }
+  }
+
+  label {
+    display: inline-block;
+    padding: 13px 10px 15px;
+    position: relative;
+    width: 600px;
+    z-index: 5;
+  }
+
+  .twitter-wrapper {
+    float: right;
+    width: 200px;
+    margin-top: 50px;
+    text-align: right;
+    z-index: +1;
+
+    p {
+      font-weight: 400;
+    }
+
+    a {
+      font-weight: 200;
+      display: block;
+      margin-bottom: 15px;
+    }    
+
+    @media screen and (max-width: 675px) {
+      display: none;
+    }
+  }
+
+  .hide-label {
+    color: rgba(0, 0, 0, .63);
+    font-weight: 400;
+    opacity: .5;
+    padding-left: 13px;
+    top: 47px;
+    transition: top .3s ease;
+    width: 100%;
+  }
+
+  .show-label {
+    font-weight: 100;
+    top: 0;
+    transition: top .3s ease;
+  }
+}

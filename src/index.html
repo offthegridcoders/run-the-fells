@@ -5,10 +5,39 @@
     <!-- NAVIGATION BAR -->
       @@include('partials/_nav.html')
     <!-- HEADER -->
-      <header class="about-header">
-        <h1 class="animated lightSpeedIn">About</h1>
+      <header class="page-header about-header">
+        <h1 class="animated lightSpeedIn"><i class="fa fa-leaf"></i> About</h1>
         <h2 class="animated lightSpeedIn">Run The Fells is a passion project between Guillaume Delloue and Stephen Young. You can find us on Twitter @willthefrench and @thewickedwebdev, respectively.</h2>
       </header>
+      <section>
+        <article class="green-copy-article">
+          <p>We’re outdoor fanatics who love to use the web and technology to bring human beings closer to nature. </p>
+          <p>We hope you find the information on this website useful and that it motivates you to enjoy everything the Fells have to offer. All we ask is that you stay safe, be respectful and have as much fun as possible.</p>
+          <p>Please use the contact form below to reach us. We make it a point to respond to all legitimate inquiries.</p>
+          <p>Carpe diem,</p>
+          <img src="assets/signatures.png">
+        </article>
+        <article class="contact-form-article clearfix">
+          <h1><i class="fa fa-envelope"></i> contact us</h1>
+          <form>
+            <div class="twitter-wrapper">
+              <p>Guillaume Delloue <i class="fa fa-twitter"></i></p>
+              <a href="http://www.twitter.com/willthefrench" target="_new">@willthefrench</a>
+              <p>Stephen Young <i class="fa fa-twitter"></i></p>
+              <a href="http://www.twitter.com/theWickedWebDev" target="_new">@theWickedWebDev</a>
+            </div>
+            <div class="input-wrapper">
+              <label for="fullname" class="hide-label">Your Name</label>
+              <input type="text" id="fullname" required>
+              <label for="email" class="hide-label">Email Address</label>
+              <input type="email" id="email" required>
+              <label for="message" class="hide-label">How can we help you?</label>
+              <textarea id="message" required></textarea>
+            </div>
+            <button type="submit" class="reg-btn">send message</button>
+          </form>
+        </article>
+      </section>
     <!-- FOOTER -->
       @@include('partials/_footer.html')
     <!-- SCRIPT FILES -->
